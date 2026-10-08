@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytest-bazel"
-version = "0.0.1"
+version = "0.1.6.post1"
 dependencies = [
   "pytest",
 ]
@@ -23,6 +23,12 @@ classifiers = [
   "Development Status :: 4 - Alpha",
   "Programming Language :: Python"
 ]
+
+[project.scripts]
+pytest_bazel = "pytest_bazel:main"
+
+[tool.setuptools]
+packages = ["pytest_bazel"]
 
 [project.optional-dependencies]
 all = [
